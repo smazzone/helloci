@@ -3,9 +3,9 @@ const express = require('express');
 const app = require('./app');
 
 describe('GET /', () => {
-  it('should respond with "Hello CI/CD World!"', async () => {
+  it('should respond with "Hello CI/CD World! from ...{somewhere}"', async () => {
     const response = await request(app).get('/');
     expect(response.status).toBe(200);
-    expect(response.text).toBe('Hello CI/CD World!');
+    expect(response.text).toContain('Hello CI/CD World!');
   });
 });

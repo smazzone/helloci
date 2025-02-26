@@ -1,8 +1,10 @@
 const express = require('express');
 const app = express();
+const os = require("os");
+
 
 app.get('/', (req, res) => {
-  res.send('Hello CI/CD World!')
+  res.send('Hello CI/CD World! from ' + os.hostname())
 })
 
 module.exports = app;
