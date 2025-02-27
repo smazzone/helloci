@@ -4,7 +4,7 @@ const os = require("os");
 
 
 app.get('/', (req, res) => {
-  res.send('Hello CI/CD World!! from ' + os.hostname())
+  res.send('Hello CI/CD World! from ' + os.hostname())
 })
 
 module.exports = app;
