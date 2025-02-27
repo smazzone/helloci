@@ -16,7 +16,7 @@ spec:
         app: hello-ci
     spec:
       containers:
-      - image: smazzone/helloci
+      - image: smazzone/helloci:latest
         name: hello-ci
         ports:
         - containerPort: 3000
