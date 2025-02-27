@@ -17,6 +17,7 @@ spec:
     spec:
       containers:
       - image: smazzone/helloci:latest
+#      - image: smazzone/helloci:1.0.0      
         name: hello-ci
         ports:
         - containerPort: 3000
@@ -34,4 +35,3 @@ spec:
       targetPort: 3000
   type: LoadBalancer
 
-#      - image: smazzone/helloci:1.0.0
