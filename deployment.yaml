@@ -6,7 +6,7 @@ metadata:
     app: hello-ci
   name: hello-ci
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: hello-ci
