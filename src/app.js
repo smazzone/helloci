@@ -4,7 +4,9 @@ const os = require("os");
 
 
 app.get('/', (req, res) => {
-  res.send('Hello CI/CD! from ' + os.hostname())
+  const appVersion = process.env.APP_VERSION || '';
+  const message = appVersion !== '' ? `Hello CI/CD! from ${os.hostname()} - Version: ${appVersion}` : `Hello CI/CD! from ${os.hostname()}`;
+  res.send(message);
 })
 
 module.exports = app;
