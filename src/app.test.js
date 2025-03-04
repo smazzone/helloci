@@ -6,6 +6,6 @@ describe('GET /', () => {
   it('It should respond with "Hello CI/CD and some other info..."', async () => {
     const response = await request(app).get('/');
     expect(response.status).toBe(200);
-    expect(response.text).toContain('Hello CI/CD from');
+    expect(response.text).toContain('Hello CI/CD');
   });
 });

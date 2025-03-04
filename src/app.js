@@ -5,7 +5,7 @@ const os = require("os");
 
 app.get('/', (req, res) => {
   const appVersion = process.env.APP_VERSION || '';
-  const message = appVersion !== '' ? `Hello CI/CD from ${os.hostname()} - Version: ${appVersion}` : `Hello CI/CD from ${os.hostname()}`;
+  const message = appVersion !== '' ? `Hello CI/CD - ${os.hostname()} - Version: ${appVersion}` : `Hello CI/CD - ${os.hostname()}`;
   res.send(message);
 })
 
