@@ -28,17 +28,3 @@ spec:
             requests:
               memory: "256Mi"
               cpu: "250m"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: hello-ci-service
-spec:
-  selector:
-    app: hello-ci
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 3000
-  type: LoadBalancer
-
