@@ -1,0 +1,2 @@
+image: <+artifact.image>
+#image: smazzone/helloci:latest

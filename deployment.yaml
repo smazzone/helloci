@@ -16,7 +16,7 @@ spec:
         app: hello-ci
     spec:
       containers:
-        - image: smazzone/helloci:latest
+        - image: {{.Values.image}}
           name: hello-ci
           imagePullPolicy: Always
           ports:
