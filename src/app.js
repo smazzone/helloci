@@ -1,8 +1,9 @@
 const express = require('express');
 const app = express();
 const os = require("os");
-const LEAKED_API_KEY = "1234567890";
-const PASSWORD = "1234567890" 
+const LEAKED_API_KEY = "b780002b85d6411ca0ad9f9c60195f72";
+const PASSWORD = "b780002b85d6411ca0ad9f9c60195f72" 
+const TOKEN = "b780002b85d6411ca0ad9f9c60195f72"
 
 app.get('/', (req, res) => {
   const appVersion = process.env.APP_VERSION || '';
