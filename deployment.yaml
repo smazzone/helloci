@@ -19,6 +19,8 @@ spec:
         - image: {{.Values.image}}
           name: hello-ci
           imagePullPolicy: Always
+          securityContext:
+            allowPrivilegeEscalation: false          
           ports:
           - containerPort: 3000
           resources:
